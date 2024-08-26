@@ -1,4 +1,5 @@
 import Page from './page';
+import { $, expect } from '@wdio/globals';
 
 class CartPage extends Page{
     

@@ -2,11 +2,7 @@
 Feature: Login Test
 
   Background:
-  As a user
-  I want to login to the application
-  So that I can use the application 
-  @Scenario-tag
-  Scenario Outline: login with username and password
+  #Scenario Outline: login with username and password
     Given user is on the login page
 
   @positive @tc-1
