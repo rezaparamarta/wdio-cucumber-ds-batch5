@@ -3,8 +3,18 @@ import { $, expect } from '@wdio/globals';
 
 class CartPage extends Page{
     
-    get checkButton() {};
-    get continueShoppingButton() {};
+    get titleItem() {
+        return $('//*[@id="item_4_title_link"]/div');
+    };
+
+
+    get checkButton() {
+        return $('#checkout');
+    };
+
+    get continueShoppingButton() {
+        return $('#continue-shopping');
+    };
 
     open() {
         return super.open('cart.html');

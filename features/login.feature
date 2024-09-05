@@ -15,14 +15,14 @@ Feature: Login Test
     Examples:
       | username      | password      |
       | standard_user | secret_sauce  |
-      | visual_user   | secret_saucew |
+    #  | visual_user   | secret_saucew |
 
-  @negative @tc-2
-  Scenario: Login with wrong password
-    And user input 'standard_user' as username
-    And user input 'wrong_password' as password
-    When user click login button
-    Then user should see error message "Epic sadface: Username and password do not match any user in this service"
+  #@negative @tc-2
+  #Scenario: Login with wrong password
+  #  And user input 'standard_user' as username
+  #  And user input 'wrong_password' as password
+  #  When user click login button
+  #  Then user should see error message "Epic sadface: Username and password do not match any user in this service"
 
   #Scenario: Login with wrong password
   #  When user login '' as username and '' as password

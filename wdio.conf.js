@@ -1,6 +1,7 @@
 import { browser } from '@wdio/globals'
 
 export const config = {
+    baseUrl: 'https://www.saucedemo.com', // Sesuaikan dengan URL kamu
     //
     // ====================
     // Runner Configuration
